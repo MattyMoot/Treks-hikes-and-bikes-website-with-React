@@ -1,0 +1,11 @@
+{
+  "name": "outdoors-website",
+  "version": "1.0.0",
+  "description": "package.json for outdoor-react website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matthew Moot",
+  "license": "ISC"
+}

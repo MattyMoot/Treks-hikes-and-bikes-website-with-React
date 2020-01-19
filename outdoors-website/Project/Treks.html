@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="This is an example website useing JavaScript and React.js " />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/outdoors-website/Project/css/style.css">
+</head>
+
+<body onload="referencesDisplay('parameter')"></body>
+
+<body style="background-color: rgb(66, 66, 66);">
+
+    <header>
+        <div class="banner">
+            <div class="banner-card">
+
+                <!--Navigation-->
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">Home</a>
+                    <a href="Treks.html">Treks</a>
+                    <a href="Hikes.html">Hikes</a>
+                    <a href="Bikes.html">Bikes</a>
+                </div>
+
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+                <section class="banner padding-component">
+
+                    <div class="banner-content">
+                        <div class="cta-banner__item">
+                            <div class="text-component">
+                                <h2>Treks, Hikes and Bikes</h2>
+                                <p>The ultimate guide for outdoor activites in New Zealand</p>
+                            </div>
+
+                            <div class="margin-top-sm">
+                                <div class="flex flex-wrap flex-gap-sm items-center">
+                                    <a href="#0" class="color-inherit">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+
+
+    </header>
+
+    <div class="row">
+    <div class="Trek-map" style="width: 30%"><iframe width="100%" height="500"
+            src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=14408%20State%20Highway%2073%20Arthur's%20Pass%207875+(Popular%20Trek%20Locations)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a
+                href="https://www.maps.ie/coordinates.html">find my coordinates</a>
+            </iframe>
+
+            <!-- Side card -->
+            
+            <div class="column-treks">
+                <div class="card">
+                    <h3>New Zealand Best Trek Locations</h3>
+                    <p>&#8226; Queenstown: Lake Wakatipu <br>
+                        <hr>
+                        &#8226; Tongariro National Park<br>
+                        <hr>
+                        &#8226; Milford Sound: Mitre Peak<br>
+                        <hr>
+                        &#8226; Aurthurs Pass: Devils Punchbowl waterfall </p>
+                </div>
+            </div>
+        </div>
+        <br />
+        </div>
+
+    
+
+    
+
+
+    <div class="social-media-treks">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-reddit"></a>
+    </div>
+
+    <!--Footer Content-->
+    <div class="footer">
+        <footer>
+            &copy; New Zealand
+            <div class="content">
+                <a title="Privacy Policy" href="#">Privacy Policy</a>
+                <a title="Terms of Service" href="#">Terms of Service</a>
+            </div>
+        </footer>
+    </div>
+
+    <div class="root"></div>
+
+    
+    <!-- Important scripts that need to be removed from index.html -->
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+
+
+
+</html>

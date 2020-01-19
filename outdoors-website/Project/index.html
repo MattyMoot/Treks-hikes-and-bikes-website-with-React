@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="This is an example website useing JavaScript and React.js " />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/outdoors-website/Project/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/style-main.css">
+    <script type='text/javascript' src="Project/js/App.js"></script>
+</head>
+
+<body onload="referencesDisplay('parameter')"></body>
+<body style="background-color: rgb(66, 66, 66);">
+
+<header>
+    <div class="banner">
+        <div class="banner-card">
+
+            <!--Navigation-->
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">Home</a>
+                <a href="Treks.html">Treks</a>
+                <a href="Hikes.html">Hikes</a>
+                <a href="Bikes.html">Bikes</a>
+            </div>
+            
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            
+            <section class="banner padding-component">
+            
+                <div class="banner-content">
+                    <div class="cta-banner__item">
+                        <div class="text-component">
+                            <h2>Treks, Hikes and Bikes</h2>
+                            <p>The ultimate guide for outdoor activites in New Zealand</p>
+                        </div>
+            
+                        <div class="margin-top-sm">
+                            <div class="flex flex-wrap flex-gap-sm items-center">
+                                <a href="#0" class="color-inherit">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </div>
+        </div>
+</header>
+
+<!-- React Components -->
+
+<div id="video"></div>
+
+    <!-- Form -->
+<div class="top-row">
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Country</label>
+                </div>
+                <div class="col-75">
+                    <select style="margin-left: 45px;", id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                        <option value="new zealand">New Zealand</option>
+                        <option value="uk">UK</option>
+                        <option value="philippines">Philippines</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">What is your favourite place to visit in New Zealand?</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <button type="submit" value="Submit" formaction="thankyou.html" name="Submit">Submit</button>
+            </div>
+        </form>
+
+        <!-- Side card -->
+        
+        <div class="column">
+            <div class="card">
+                <h3>New Zealand Country-side reviews</h3>
+                <p>&#8226; Our tour of Auckland was delightful! Gary, our driver, was knowledgeable about his beautiful city and
+                    countryside. I
+                    wish we had more time to explore designated tour locals. Overall, we enjoyed our tour. I would recommend
+                    this excursion,
+                    for anyone with limited time in Auckland, to experience a taste of the city and countryside.<br>
+                    <hr>
+                    &#8226; The caves were really great and we found the information about the glowworms really interesting.
+                    Rotorua itself was not
+                    so great since we just drove around the town. <br>
+                    <hr>
+                    &#8226; 5 hours well spent. A totally enjoyable drive to places you would never usually find. An amazing
+                    waterfall and walk to
+                    the top of Mt Eden highlights. Would highly recommend this tour and Ash our guide. <br>
+                    <hr>
+                    &#8226; This adventure was action packed from the get go. Food was amazing! Hikes, bike, and kayak
+                    excursions were beautiful and
+                    the people we traveled with were the best. Guides were over the top amazing. They worked their tails off for
+                    us. </p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/matthew.mooty.9" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/Mootym1" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/matthewmooty9/" class="fa fa-instagram"></a>
+                <a href="https://www.reddit.com/" class="fa fa-reddit"></a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    
+
+<div class="botton-left-img">
+    <figure class="featured-image">
+        <img class="main-page-img" src="/outdoors-website/Project/images/mountain-range.jpg" alt="mountain range" height="700" width="700">
+    </figure>
+    <h2 class="main-title">beautiful mountain range in New Zealand</h2>
+    <p class="img-info">
+        some information on the photo
+    </p>
+</div>
+    
+
+    
+    
+   
+
+<!--Footer Content-->
+<div class="footer">
+    <footer>
+        <p class="author">Created by Matthew Moot</p>
+        &copy; New Zealand
+        <div class="content">
+            <a title="Privacy Policy" href="#">Privacy Policy</a>
+            <a title="Terms of Service" href="#">Terms of Service</a>
+
+        </div>
+        
+    </footer>
+</div>
+
+<div class="root"></div>
+<!-- Important scripts that need to be removed from index.html -->
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+<!-- We will put our React component inside this div. -->
+<div id="like_button_container"></div>
+
+<!-- Load React. -->
+<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+<script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<!-- Load our React component. -->
+
+
+
+</body>
+
+
+
+</html>
